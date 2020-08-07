@@ -1,0 +1,42 @@
+{
+  "name": "craco-purescript-loader",
+  "version": "1.0.0",
+  "description": "A craco plugin to use purs-loader (purescript) with create-react-app",
+  "repository": "github:andys8/craco-purescript-loader",
+  "main": "index.js",
+  "author": "andys8",
+  "license": "MIT",
+  "keywords": [
+    "craco",
+    "create-react-app",
+    "react",
+    "webpack",
+    "purescript",
+    "purs-loader"
+  ],
+  "devDependencies": {
+    "@craco/craco": "^5.6.4",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "react-scripts": "^3.4.1"
+  },
+  "peerDependencies": {
+    "@craco/craco": "^5.6.4",
+    "react-scripts": "^3.4.1"
+  },
+  "dependencies": {
+    "purs-loader": "^3.7.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  }
+}
