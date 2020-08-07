@@ -17,7 +17,7 @@ const throwError = (message, githubIssueQuery) =>
   });
 
 module.exports = {
-  overrideWebpackConfig: ({ webpackConfig }) => {
+  overrideWebpackConfig: ({ webpackConfig, pluginOptions }) => {
     // Resolve purescript extension
     if (
       !webpackConfig ||
@@ -44,15 +44,16 @@ module.exports = {
     );
 
     // PureScript loader
+    const defaultOptions = {
+      spago: true,
+      pscIde: true,
+      watch: isWebpackDevServer || isWatch,
+    };
     const pursLoader = {
       loader: "purs-loader",
       test: /\.purs$/,
       exclude: /node_modules/,
-      query: {
-        spago: true,
-        pscIde: true,
-        watch: isWebpackDevServer || isWatch,
-      },
+      query: Object.assign({}, defaultOptions, pluginOptions),
     };
 
     // Append purs-loader before file-loader
