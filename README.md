@@ -43,3 +43,7 @@ module.exports = {
   ],
 };
 ```
+
+## Example
+
+[Example `create-react-app` project with PureScript](https://github.com/andys8/create-react-app-purescript) using `craco` and this plugin.
