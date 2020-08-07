@@ -2,7 +2,7 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-This is a [craco](https://github.com/gsoft-inc/craco) plugin to add [purs-loader](https://www.npmjs.com/package/purs-loader) with [create-react-app](https://facebook.github.io/create-react-app).
+This is a [craco](https://github.com/gsoft-inc/craco) plugin to add [purs-loader](https://www.npmjs.com/package/purs-loader) for [PureScript](https://www.purescript.org) with [`create-react-app`](https://facebook.github.io/create-react-app). It allows you to use PureScript code in `create-react-app` without ejecting.
 
 ## Installation
 
