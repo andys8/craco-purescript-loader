@@ -1,5 +1,5 @@
 const path = require("path");
-const { addBeforeLoader, loaderByName, getLoader } = require("@craco/craco");
+const { addBeforeLoader, loaderByName, getLoader, throwUnexpectedConfigError } = require("@craco/craco");
 
 // Detect watch
 // <https://github.com/purescript/spago#get-started-from-scratch-with-webpack-frontend-projects>
@@ -60,7 +60,7 @@ module.exports = {
     const fileLoader = loaderByName("file-loader");
     const { isFound } = getLoader(webpackConfig, fileLoader);
     if (!isFound) {
-      throw new Error("Didn't find expected 'file-loader'");
+      throwError("Didn't find expected 'file-loader'");
     }
     addBeforeLoader(webpackConfig, fileLoader, pursLoader);
 
