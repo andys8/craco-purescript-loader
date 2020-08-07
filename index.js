@@ -10,8 +10,8 @@ const isWebpackDevServer = process.argv.some(
 
 const throwError = (message, githubIssueQuery) =>
   throwUnexpectedConfigError({
-    packageName: "craco-less",
-    githubRepo: "ndbroadbent/craco-less",
+    packageName: "craco-purescript-loader",
+    githubRepo: "andys8/craco-purescript-loader",
     message,
     githubIssueQuery,
   });
