@@ -46,7 +46,6 @@ module.exports = {
     // PureScript loader
     const defaultOptions = {
       spago: true,
-      pscIde: true,
       watch: isWebpackDevServer || isWatch,
     };
     const pursLoader = {
