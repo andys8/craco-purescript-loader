@@ -15,26 +15,21 @@
     "purs-loader"
   ],
   "devDependencies": {
-    "@craco/craco": "^6.4.0",
-    "eslint": "^8.2.0",
+    "@craco/craco": "^6.4.2",
+    "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.0.2",
-    "prettier": "^2.4.1",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.0",
     "react-scripts": "^4.0.3"
   },
   "peerDependencies": {
-    "@craco/craco": "^6.4.0",
+    "@craco/craco": "^6.4.2",
     "react-scripts": "^4.0.3"
   },
   "dependencies": {
     "purs-loader": "^3.7.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.js": "eslint"
