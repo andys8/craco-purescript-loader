@@ -15,18 +15,18 @@
     "purs-loader"
   ],
   "devDependencies": {
-    "@craco/craco": "^6.4.2",
+    "@craco/craco": "^7.0.0-alpha.3",
     "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.0",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^5.0.0"
   },
   "peerDependencies": {
-    "@craco/craco": "^6.4.2",
-    "react-scripts": "^4.0.3"
+    "@craco/craco": "^7.0.0-alpha.3",
+    "react-scripts": "^5.0.0"
   },
   "dependencies": {
     "purs-loader": "^3.7.2"

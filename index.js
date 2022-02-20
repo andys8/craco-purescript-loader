@@ -1,5 +1,10 @@
 const path = require("path");
-const { addBeforeLoader, loaderByName, getLoader, throwUnexpectedConfigError } = require("@craco/craco");
+const {
+  addBeforeLoader,
+  loaderByName,
+  getLoader,
+  throwUnexpectedConfigError,
+} = require("@craco/craco");
 
 // Detect watch
 // <https://github.com/purescript/spago#get-started-from-scratch-with-webpack-frontend-projects>
@@ -49,20 +54,23 @@ module.exports = {
       watch: isWebpackDevServer || isWatch,
     };
     const pursLoader = {
-      loader: "purs-loader",
       test: /\.purs$/,
       exclude: /node_modules/,
-      query: Object.assign({}, defaultOptions, pluginOptions),
+      use: [
+        {
+          loader: "purs-loader",
+          options: Object.assign({}, defaultOptions, pluginOptions),
+        },
+      ],
     };
 
     // Append purs-loader before file-loader
-    const fileLoader = loaderByName("file-loader");
-    const { isFound } = getLoader(webpackConfig, fileLoader);
+    const babelLoader = loaderByName("babel-loader");
+    const { isFound } = getLoader(webpackConfig, babelLoader);
     if (!isFound) {
-      throwError("Didn't find expected 'file-loader'");
+      throwError("Didn't find expected 'babel-loader'");
     }
-    addBeforeLoader(webpackConfig, fileLoader, pursLoader);
-
+    addBeforeLoader(webpackConfig, babelLoader, pursLoader);
     return webpackConfig;
   },
 };
