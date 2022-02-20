@@ -16,12 +16,12 @@
   ],
   "devDependencies": {
     "@craco/craco": "^7.0.0-alpha.3",
-    "eslint": "^8.3.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.1.2",
-    "prettier": "^2.5.0",
+    "lint-staged": "^12.3.4",
+    "prettier": "^2.5.1",
     "react-scripts": "^5.0.0"
   },
   "peerDependencies": {
