@@ -29,7 +29,7 @@
     "react-scripts": "^4.0.3"
   },
   "dependencies": {
-    "purs-loader": "^3.7.2"
+    "purs-loader": "kl0tl/purs-loader#es-modules"
   },
   "lint-staged": {
     "*.js": "eslint"
