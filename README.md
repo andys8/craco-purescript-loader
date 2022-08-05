@@ -47,3 +47,7 @@ module.exports = {
 ## Example
 
 [Example `create-react-app` project with PureScript](https://github.com/andys8/create-react-app-purescript) using `craco` and this plugin.
+
+## Alternative
+
+An alternative to using craco is to [import the PureScript compiler output directly](https://github.com/purescript/spago/#get-started-from-scratch-with-webpack-frontend-projects).
