@@ -51,3 +51,5 @@ module.exports = {
 ## Alternative
 
 An alternative to using craco is to [import the PureScript compiler output directly](https://github.com/purescript/spago/#get-started-from-scratch-with-webpack-frontend-projects).
+
+Or use vite, esbuild or parcel instead of create-react-app.
